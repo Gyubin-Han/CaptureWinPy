@@ -26,10 +26,10 @@ while True:
         if t==0:
             print("첫 번째 포인트 대기 중")
             t+=1
-        if keyboard.is_pressed("`"):
+        if keyboard.is_pressed("\\"):
             print("종료합니다.")
             exit()
-        if keyboard.is_pressed("="):
+        if keyboard.is_pressed("["):
             print("자동 입력 값 1 감소 :",end=" ")
             if i<=1:
                 print("1")
@@ -41,11 +41,11 @@ while True:
             i+=1
             print("자동 입력 값 1 증가 :",i)
             time.sleep(0.2)
-        if keyboard.is_pressed("["):
+        if keyboard.is_pressed("="):
             i=1
             print("자동 입력 값 초기화 :",i)
             time.sleep(0.2)
-        if keyboard.is_pressed("\\"):
+        if keyboard.is_pressed("`"):
             temp_scr=pag.screenshot()
             temp_scr.save(temp_path)
             start=mouse_capture()
