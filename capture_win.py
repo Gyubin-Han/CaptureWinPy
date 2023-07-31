@@ -24,7 +24,7 @@ while True:
     fail=0
     while True:
         if t==0:
-            print("첫 번째 포인트 대기 중")
+            print(i,"/ 첫 번째 포인트 대기 중")
             t+=1
         if keyboard.is_pressed("\\"):
             print("종료합니다.")
