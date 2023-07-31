@@ -56,10 +56,11 @@ while True:
         if t==1:
             print("두 번째 포인트 대기 중")
             t=0
-        if keyboard.is_pressed("`"):
-            fail=1
-            break
         if keyboard.is_pressed("\\"):
+            fail=1
+            print("중지 / 첫 번째 포인트부터 다시 대기")
+            break
+        if keyboard.is_pressed("`"):
             end=pag.position()
             print("두 번째 포인트 포착 완료",end[0],end[1])
             time.sleep(0.2)
