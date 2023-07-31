@@ -37,6 +37,10 @@ while True:
             i-=1
             print(i)
             time.sleep(0.2)
+        if keyboard.is_pressed("]"):
+            i+=1
+            print("자동 입력 값 1 증가 :",i)
+            time.sleep(0.2)
         if keyboard.is_pressed("\\"):
             temp_scr=pag.screenshot()
             temp_scr.save(temp_path)
